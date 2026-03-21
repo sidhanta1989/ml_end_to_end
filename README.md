@@ -8,10 +8,10 @@ A newly initialized project repository.
 
 To be determined based on project development.
 
-## Prerequisites
+### Prerequisites
 
-- Git for version control
-- Your preferred code editor or IDE
+- Python 3.7+
+- pip
 
 ## Installation and Setup
 
@@ -32,7 +32,11 @@ To be determined based on project development.
 
 ## Usage
 
-Usage examples will be documented as the project is developed and features are implemented.
+Run the project via the command-line interface:
+
+```bash
+ml_project
+```
 
 ## Architecture Overview
 
@@ -45,3 +49,73 @@ Contributions are welcome. Please follow the project's coding standards and subm
 ## License
 
 See LICENSE file for details.
+
+# ML Project
+
+A comprehensive end-to-end machine learning project demonstrating best practices for data processing, model training, and deployment.
+
+## Features
+
+- Data processing and validation with pandas
+- Numerical computations with numpy
+- Statistical visualization with seaborn
+- Modular package structure
+- CLI entry point for easy execution
+
+## Installation
+
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd ml_project
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Install the package in development mode:
+   ```bash
+   pip install -e .
+   ```
+
+## Project Structure
+
+```
+ml_project/
+├── src/                    # Source code directory
+├── requirements.txt        # Project dependencies
+├── setup.py               # Package configuration and metadata
+└── README.md              # This file
+```
+
+## Dependencies
+
+- **pandas**: Data manipulation and analysis
+- **numpy**: Numerical computing and array operations
+- **seaborn**: Statistical data visualization
+
+## Project Metadata
+
+- **Version**: 1.0.1
+- **Author**: sidhant
+- **Contact**: sidhanta1989.maharana@gmail.com
+
+## System Architecture
+
+```mermaid
+graph TD
+    A["ml_project"] --> B["src Package"]
+    A --> C["setup.py"]
+    A --> D["requirements.txt"]
+    C --> E["Package Configuration"]
+    D --> F["Dependencies"]
+    F --> G["pandas"]
+    F --> H["numpy"]
+    F --> I["seaborn"]
+    B --> J["CLI Module"]
+    J --> K["Entry Point"]
+```
